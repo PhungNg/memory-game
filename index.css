@@ -1,0 +1,82 @@
+body{
+    height: 100vh;
+    background-image: url('https://i.imgur.com/3iFHV0m.png?1');
+    background-size: cover;
+}
+main{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+h1{
+    text-align: center;
+    margin:.5rem 0;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+}
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 212, 202);
+    grid-column: 1/5;
+    border-radius: 3px;
+    margin: .5rem;
+}
+.topBar p{
+    margin: .5rem;
+    color: white;
+    font-family: inherit;
+}
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    padding: .5rem;
+    width: 500px;
+}
+.box{
+    background-color: rgb(6, 212, 202);
+    margin: .5rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+    background-position: top;
+    background-size: 0em;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(0, 255, 242);
+}
+.show{
+    background-size: cover;
+    background-color: rgb(0, 255, 242);
+    pointer-events: none;
+}
+.correct{
+    background-size: cover;
+    pointer-events: none;
+    background-color: greenyellow;
+}
+.unclickable{
+    pointer-events: none;
+}
+.gameoverCard{
+    position: absolute;
+    transform: translateY(100%); 
+}
+.card{
+    box-shadow: 0 10px 10px 10px rgba(44, 44, 44, 0.75);
+    width: 200px;
+}
+.card-body{
+    margin: auto
+}
